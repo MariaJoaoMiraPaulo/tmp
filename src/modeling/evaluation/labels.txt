@@ -1,0 +1,55 @@
+OLD:
+{0: 'angola', 1: 'argentina', 2: 'australia', 3: 'brasil', 4: 'cape_verde', 5: 'chile', 6: 'colombia', 
+7: 'curacao', 8: 'espanha', 9: 'finland', 10: 'france', 11: 'germany', 12: 'honduras', 13: 'hungary', 14: 'italy', 
+15: 'malta', 16: 'mexico', 17: 'morocco', 18: 'mozambique', 19: 'peru', 20: 'portugal', 21: 'slovakia', 22: 'sweden', 
+23: 'united_kingdom', 24: 'united_states_of_america'}
+
+NEW:
+['portugal' 'france' 'espanha' 'brasil' 'germany' 'colombia' 'peru'
+ 'united_states_of_america' 'australia' 'mexico' 'united_kingdom'
+ 'argentina' 'chile']
+
+argentina australia brasil chile colombia espanha france germany mexico peru portugal united_kingdom united_states_of_america
+
+{0: 'Accounting/Financial Services', 1: 'Architecture/Construction', 2: 'Arts and Entertainment', 3: 'Beauty/Health', 4: 'Church', 
+5: 'E-commerce', 6: 'Education', 7: 'Food', 8: 'Government', 9: 'Hotel, Restaurant and Travel', 10: 'Information Technologies', 
+11: 'Insurance', 12: 'Manufacturing', 13: 'Marketing', 14: 'Non-profit', 15: 'Other', 16: 'Publishing/Media', 17: 'Real Estate', 
+18: 'Retail', 19: 'Services', 20: 'Undefined'}
+
+NEW
+['Retail' 'Undefined' 'Information Technologies' 'Arts and Entertainment'
+ 'Publishing/Media' 'Marketing' 'E-commerce' 'Services'
+ 'Hotel, Restaurant and Travel' 'Other' 'Non-profit' 'Real Estate'
+ 'Manufacturing' 'Education' 'Church' 'Accounting/Financial Services'
+ 'Government' 'Beauty/Health' 'Food' 'Architecture/Construction'
+ 'Insurance']   
+
+ARRAY_MEANING
+
+
+[[argentina,australia,brasil,chile,colombia,espanha
+  france,germany,mexico,peru,portugal,united_kingdom
+  united_states_of_america,Accounting/Financial Services,Architecture/Construction,Arts and Entertainment,Beauty/Health,Church
+  E-commerce,Education,Food,Government, 'Hotel, Restaurant and Travel',Information Technologies
+  Insurance,Manufacturing,Marketing,Non-profit,Other,Publishing/Media
+  Real Estate,Retail,Services,Undefined,nr_ words,c  ]]
+
+
+feature_importances = pd.DataFrame(grid.best_estimator_.feature_importances_, index = ['argentina','australia','brasil','chile','colombia','espanha','france','germany','mexico','peru','portugal','united_kingdom','united_states_of_america','Accounting/Financial Services','Architecture/Construction','Arts and Entertainment','Beauty/Health','Church','E-commerce','Education','Food','Government','Hotel,Restaurant and Travel','Information Technologies','Insurance','Manufacturing','Marketing','Non-profit','Other','Publishing/Media','Real Estate','Retail','Services','Undefined','nr_ words','nr_chars','case_percentage','lemmas_past_performance','nr_lemmas','punctuation','emojis','personalization','special_chars','numbers','currency'], columns=['importance']).sort_values('importance', ascending=False)
+
+
+[[0.         0.         0.         0.         0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         0.         1.         0.         0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         0.         0.         0.         0.         0.
+  0.         0.         0.         1.         0.01298701 0.00447427
+  0.         0.         0.         0.         0.         0.
+  0.        ]]
+
+
+
+
+nr_chars, case_percentage,punctuation,emojis, personalization, special_chars,numbers,currency

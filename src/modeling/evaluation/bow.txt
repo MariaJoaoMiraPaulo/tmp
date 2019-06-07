@@ -1,0 +1,21 @@
+Best model:  0
+Best params:  {'bootstrap': False, 'max_depth': 25, 'min_samples_split': 3, 'n_estimators': 500}
+Model:  Random Forest
+              precision    recall  f1-score   support
+
+           1       0.59      0.82      0.69     11297
+           2       0.75      0.15      0.26      6324
+           3       0.59      0.21      0.31      9495
+           4       0.61      0.82      0.70     20842
+           5       0.86      0.84      0.85     21324
+
+    accuracy                           0.68     69282
+   macro avg       0.68      0.57      0.56     69282
+weighted avg       0.69      0.68      0.65     69282
+
+[[ 9297   200   191  1304   305]
+ [ 3000   977   520  1689   138]
+ [ 2054   121  2003  5021   296]
+ [  962    13   694 17104  2069]
+ [  318     0     3  3143 17860]]
+Accuracy:  0.6818654195895038

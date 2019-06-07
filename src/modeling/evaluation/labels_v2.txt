@@ -1,0 +1,2 @@
+'portugal', 'honduras','angola','curacao', 'espanha','brasil','colombia','peru','mozambique','united_states_of_america','australia','mexico','malta', 'united_kingdom','argentina','chile'
+16 countries
